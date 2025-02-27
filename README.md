@@ -48,70 +48,25 @@ This project is a **Smart Home Energy Monitoring System** that allows users to t
 
 ---
 
-## 📂 **Project Structure**  
-
-smart-home-energy-monitoring/
-│── backend/                     # Spring Boot Backend
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/smartenergy/
-│   │   │   │   ├── controller/       # REST API Controllers
-│   │   │   │   │   ├── EnergyController.java
-│   │   │   │   ├── model/            # Data Models
-│   │   │   │   │   ├── EnergyConsumption.java
-│   │   │   │   ├── repository/       # Database Repository
-│   │   │   │   │   ├── EnergyConsumptionRepository.java
-│   │   │   │   ├── service/          # Business Logic
-│   │   │   │   │   ├── EnergyService.java
-│   │   │   │   ├── SmartEnergyApplication.java  # Main Spring Boot App
-│   │   ├── resources/
-│   │   │   ├── application.properties  # Database Configuration
-│   ├── pom.xml                         # Maven Dependencies
-│   ├── Dockerfile                       # Docker Configuration
-│
-│── frontend/                     # ReactJS Frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/            # React Components
-│   │   │   ├── EnergyChart.js
-│   │   │   ├── EnergyTable.js
-│   │   ├── services/              # API Services
-│   │   │   ├── EnergyService.js
-│   │   ├── pages/              # Dashboard Page
-│   │   │   ├── Dashboard.js
-│   │   ├── App.js                 # Main React App
-│   │   ├── index.js               # React Entry Point
-│   ├── package.json               # React Dependencies
-│   ├── Dockerfile                 # Docker Configuration
-│
-│── kubernetes/                    # Kubernetes Deployment
-│   ├── backend-deployment.yaml
-│   ├── frontend-deployment.yaml
-│   ├── postgres-deployment.yaml
-│
-│── README.md                       # Full Project Documentation
-
----
-
 ## 🚀 **How to Run the Project**  
 
 # 1️⃣ Clone the Repository
-git clone https://github.com/Karanmangtani23/smart-energy-monitoring.git ---
+git clone https://github.com/Karanmangtani23/smart-energy-monitoring.git <br>
 cd smart-energy-monitoring
 
 # 2️⃣ Setup Backend (Spring Boot)
 cd backend
-mvn clean install
-mvn spring-boot:run
+mvn clean install<br>
+mvn spring-boot:run<br>
 
 # 3️⃣ Setup Frontend (ReactJS)
 cd ../frontend
-npm install
-npm start
+npm install<br>
+npm start<br>
 
 # 4️⃣ Run with Docker
 cd ..
-docker-compose up --build
+docker-compose up --build<br>
 
 # 5️⃣ Deploy on Kubernetes
 kubectl apply -f k8s/
