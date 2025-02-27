@@ -96,7 +96,7 @@ smart-home-energy-monitoring/
 ## 🚀 **How to Run the Project**  
 
 # 1️⃣ Clone the Repository
-git clone https://github.com/Karanmangtani23/smart-energy-monitoring.git
+git clone https://github.com/Karanmangtani23/smart-energy-monitoring.git ---
 cd smart-energy-monitoring
 
 # 2️⃣ Setup Backend (Spring Boot)
