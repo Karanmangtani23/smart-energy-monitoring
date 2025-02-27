@@ -50,15 +50,53 @@ This project is a **Smart Home Energy Monitoring System** that allows users to t
 
 ## 📂 **Project Structure**  
 
-smart-energy-monitoring/ │── backend/ # Spring Boot backend │ ├── src/main/java/ # Java source code │ ├── src/main/resources/application.properties # Database & security configs │ ├── Dockerfile # Backend containerization │ └── k8s/ # Kubernetes deployment files │ │── frontend/ # React frontend │ ├── src/ # React components │ ├── public/ # Static assets │ ├── package.json # Dependencies │ ├── Dockerfile # Frontend containerization │ └── k8s/ # Kubernetes deployment files │ └── README.md # Project documentation
-
+smart-home-energy-monitoring/
+│── backend/                     # Spring Boot Backend
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/smartenergy/
+│   │   │   │   ├── controller/       # REST API Controllers
+│   │   │   │   │   ├── EnergyController.java
+│   │   │   │   ├── model/            # Data Models
+│   │   │   │   │   ├── EnergyConsumption.java
+│   │   │   │   ├── repository/       # Database Repository
+│   │   │   │   │   ├── EnergyConsumptionRepository.java
+│   │   │   │   ├── service/          # Business Logic
+│   │   │   │   │   ├── EnergyService.java
+│   │   │   │   ├── SmartEnergyApplication.java  # Main Spring Boot App
+│   │   ├── resources/
+│   │   │   ├── application.properties  # Database Configuration
+│   ├── pom.xml                         # Maven Dependencies
+│   ├── Dockerfile                       # Docker Configuration
+│
+│── frontend/                     # ReactJS Frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/            # React Components
+│   │   │   ├── EnergyChart.js
+│   │   │   ├── EnergyTable.js
+│   │   ├── services/              # API Services
+│   │   │   ├── EnergyService.js
+│   │   ├── pages/              # Dashboard Page
+│   │   │   ├── Dashboard.js
+│   │   ├── App.js                 # Main React App
+│   │   ├── index.js               # React Entry Point
+│   ├── package.json               # React Dependencies
+│   ├── Dockerfile                 # Docker Configuration
+│
+│── kubernetes/                    # Kubernetes Deployment
+│   ├── backend-deployment.yaml
+│   ├── frontend-deployment.yaml
+│   ├── postgres-deployment.yaml
+│
+│── README.md                       # Full Project Documentation
 
 ---
 
 ## 🚀 **How to Run the Project**  
 
 # 1️⃣ Clone the Repository
-git clone https://github.com/your-username/smart-energy-monitoring.git
+git clone https://github.com/Karanmangtani23/smart-energy-monitoring.git
 cd smart-energy-monitoring
 
 # 2️⃣ Setup Backend (Spring Boot)
