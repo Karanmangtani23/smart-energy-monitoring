@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: your-dockerhub-username/smart-energy-backend
+        image: karanm/smart-energy-backend
         env:
         - name: SPRING_DATASOURCE_URL
           value: "jdbc:postgresql://postgres-service:5432/energydb"
