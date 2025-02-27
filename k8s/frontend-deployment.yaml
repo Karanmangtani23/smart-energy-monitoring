@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: your-dockerhub-username/smart-energy-frontend
+        image: karanm/smart-energy-frontend
         ports:
         - containerPort: 80
 ---
