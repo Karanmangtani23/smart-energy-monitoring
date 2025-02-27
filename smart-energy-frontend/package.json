@@ -1,0 +1,27 @@
+{
+  "name": "smart-energy-monitoring",
+  "version": "1.0.0",
+  "description": "A Smart Home Energy Monitoring System using ReactJS and Spring Boot",
+  "author": "Your Name",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@mui/material": "^5.15.0",
+    "axios": "^1.6.2",
+    "chart.js": "^4.4.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "react-toastify": "^9.1.3"
+  },
+  "devDependencies": {
+    "vite": "^4.6.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "echo \"No test specified\" && exit 0"
+  }
+}
